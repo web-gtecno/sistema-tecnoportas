@@ -1,0 +1,20 @@
+body {
+    background: #ffffff;
+    height: 100vh;
+}
+
+.logo {
+    text-align: center;
+    margin: 16px;
+}
+
+form {
+    width: 300px;
+}
+input {
+    border: 1px solid #16017C;
+}
+
+button {
+    margin-bottom: 10px;
+}

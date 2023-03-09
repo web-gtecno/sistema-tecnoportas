@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/global.css">
+    </head>
+    <body class="centralize">
+        <section class="container__principal">
+            <figure class="logo">
+                <img src="assets/img/logotecnoportas.png" alt="Logo Tecnoportas">
+            </figure>
+            <form>
+                <div class="form-field">
+                    <div><label>Email</label></div>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+                    <div class="error" id="email-required-error">Email é obrigatório</div>
+                    <div class="error" id="email-invalid-error">Email é inválido</div>
+                </div>
+                <div class="form-field">
+                    <div><label>Senha</label></div>
+                    <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+                    <div class="error" id="password-required-error">Senha é obrigatória</div>
+                </div>
+                <div>
+                    <button type="button" class="clear" id="recover-password-button" onclick="recoverPassword()" disabled="true">Recuperar senha</button>
+                </div>
+                <div>
+                    <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+                </div>
+                <div>
+                    <button type="button" class="outline" onclick="register()">Registrar</button>
+                </div>
+            </form>
+        </section>
+    
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/validations.js"></script>
+        <script src="assets/js/loading.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyB18dW4WK48y5VFbaDJrxi-V5-QSV8A3sY",
+                authDomain: "tecnoportas-rewards.firebaseapp.com",
+                projectId: "tecnoportas-rewards",
+                storageBucket: "tecnoportas-rewards.appspot.com",
+                messagingSenderId: "501031301545",
+                appId: "1:501031301545:web:21b715a0170a6d9eec14b8"
+            };
+            firebase.initializeApp(firebaseConfig);                
+        
+        </script>
+    </body>
+
+</html>
