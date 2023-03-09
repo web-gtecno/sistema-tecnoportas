@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div>
-                <button type="button" class="solid" disabled="true" id="register-button">Registrar</button>
+                <button type="button" class="solid" disabled="true" onclick="register()" id="register-button">Registrar</button>
             </div>
             <div>
                 <button type="button" class="outline">Login</button>
@@ -54,4 +54,10 @@
 </body>
     <script src="register.js"></script>
     <script src="../../assets/js/validations.js"></script>
+
+    <script src="../../assets/js/loading.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+        <script src="../../firebase-init.js"></script>
 </html>
