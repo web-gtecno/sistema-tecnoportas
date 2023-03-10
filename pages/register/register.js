@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
-        window.location.href = "../home/home.html"
+        window.location.href = "pages/home/home.html";
     }
 })
 
@@ -77,6 +77,10 @@ function isFormValid() {
     }
 
     return true;
+}
+
+function goToIndex() {
+    window.location.href = "../../index.html";
 }
 
 const form = {
